@@ -7,7 +7,7 @@ export default function Footer(props) {
   return (
     <div>
     
-      <footer className="footer py-4" style={{backgroundColor:props.mode==='light'?'#e9ecef':'rgb(35 39 43)',color:props.mode==='light'?'black':'white', border:props.mode==='dark'?'1px solid white':''}}>
+      <footer className="footer py-4" style={{backgroundColor:props.mode==='light'?'#e9ecef':'rgb(35 39 43)',color:props.mode==='light'?'black':'white'}}>
       <div className="container">
         <div className="row">
           {/* About Section */}

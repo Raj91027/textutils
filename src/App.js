@@ -33,7 +33,7 @@ function App() {
     if(mode==='light'){
       setMode('dark');
       document.body.style.backgroundColor ='black';
-      document.body.style.border='1px solid white';
+      // document.body.style.border='1px solid white';
       showAlert("Dark mode has been enabled!","success");
     }
     else{
