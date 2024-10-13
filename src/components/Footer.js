@@ -14,7 +14,7 @@ export default function Footer(props) {
           <div className="col-md-4 mb-3">
             <h5>About TextUtils</h5>
             <p>
-              TechHub is your ultimate platform to explore technical documentation, learning roadmaps, resources to learn skills and the latest trends in programming.
+              TextUtils is your ultimate platform to manipulate your text as the way you want to do.
             </p>
           </div>
 
@@ -22,10 +22,8 @@ export default function Footer(props) {
           <div className="col-md-4 mb-3" style={{backgroundColor:props.mode==='light'?'#e9ecef':'rgb(35 39 43)',color:props.mode==='light'?'black':'white'}}>
             <h5>Useful Links</h5>
             <ul className="list-unstyled">
-              <li><a href="/documentation" className={`text-${props.mode==='light'?'black':'white'}`}>Documentation</a></li>
-              <li><a href="/roadmaps" className={`text-${props.mode==='light'?'black':'white'}`}>Roadmaps</a></li>
-              <li><a href="/about" className={`text-${props.mode==='light'?'black':'white'}`}>About Us</a></li>
-              <li><a href="/contact" className={`text-${props.mode==='light'?'black':'white'}`}>Contact</a></li>
+              <li><a href="/documentation" className={`text-${props.mode==='light'?'black':'white'}`}>Home</a></li>
+              <li><a href="/roadmaps" className={`text-${props.mode==='light'?'black':'white'}`}>About</a></li>
             </ul>
           </div>
 
@@ -33,7 +31,7 @@ export default function Footer(props) {
           <div className="col-md-4 mb-3" style={{backgroundColor:props.mode==='light'?'#e9ecef':'rgb(35 39 43)',color:props.mode==='light'?'black':'white'}}>
             <h5>Contact Us</h5>
             <p>
-              <FaEnvelope /> <a href="mailto:contact@techhub.com" className={`text-${props.mode==='light'?'black':'white'}`}>contact@techhub.com</a>
+              <FaEnvelope /> <a href="mailto:contact@techhub.com" className={`text-${props.mode==='light'?'black':'white'}`}>contact@textutils.com</a>
             </p>
             <div className="social-icons">
               <a href="https://twitter.com" className={`text-${props.mode==='light'?'black':'white'}`}><FaTwitter size={24} /></a>
@@ -45,7 +43,7 @@ export default function Footer(props) {
 
         {/* Footer Bottom */}
         <div className="text-center mt-4">
-          <p className="mb-0">&copy; 2024 TechHub. All rights reserved.</p>
+          <p className="mb-0">&copy; 2024 TextUtils. All rights reserved.</p>
         </div>
       </div>
     </footer>
