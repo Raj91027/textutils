@@ -1,0 +1,87 @@
+.about-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background: linear-gradient(to bottom right, #d4fc79, #96e6a1); /* Same as Home */
+    text-align: center;
+  }
+  
+  .about-content {
+    max-width: 800px;
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #4a4a4a;
+    margin-bottom: 20px;
+  }
+  
+  .about-description {
+    font-size: 1.2rem;
+    opacity: 0.8;
+    margin-bottom: 20px;
+  }
+  
+  .features-box {
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  .features-title {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .features-box ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .feature-item {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .feature-item::before {
+    content: "✔";
+    color: green;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .about-get-started {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #0073e6;
+  }
+  
+  .about-button {
+    display: inline-block;
+    margin-top: 20px;
+    background: #0073e6;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .about-button:hover {
+    background: #005bb5;
+    transform: scale(1.05);
+  }
+  

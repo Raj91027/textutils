@@ -1,73 +1,47 @@
-import React from 'react'
-import { FaEnvelope, FaTwitter, FaLinkedin } from 'react-icons/fa';
+import React from "react";
+import { Link } from "react-router-dom";
+import "./About.css";
 
-export default function About(props) {
-
+const About = (props) => {
   return (
-    <div className="about-container" style={{backgroundColor:props.mode==='light'?'white':'black',color:props.mode==='light'?'black':'white', border:props.mode==='dark'?'1px solid white':''}}>
-      <h2 className="text-center my-4">About TextUtils</h2>
-
-      <div className="container">
-        <section className="about-section mb-5">
-          <h3>TextUtils Overview</h3>
-          <p>
-          TechHub is your ultimate platform to explore technical documentation, learning roadmaps, resources to learn skills and the latest trends in programming.
-          </p>
-          <p>
-            Our aim is to provide comprehensive documentation links and, resources links for various technical skills
-            such as Java, Python, JavaScript, Django, Flask, Node.js, npm, React, Git, GitHub, and more.
-            Additionally, we offer roadmaps to guide users through their learning journey.
-          </p>
-          <p>
-            Our goal is to create a one-stop resource for developers and learners, making it easier
-            to find the information they need to succeed in their projects and careers.
-          </p>
-        </section>
-
-        <section className="about-section mb-5">
-          <h3>Our Team</h3>
-          <div className="row">
-            <div className="col-md-4 mb-4">
-              <div className="card shadow-sm" style={{backgroundColor:props.mode==='light'?'white':'black',color:props.mode==='light'?'black':'white', border:props.mode==='dark'?'1px solid white':''}}>
-                <div className="card-body text-center">
-                  <h5 className="card-title">Raj Kumar Yadav</h5>
-                  <p className="card-text">Full Stack Developer - Knowledgeable in Java, Node.js, and Database Management</p>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-4 mb-4">
-              <div className="card shadow-sm" style={{backgroundColor:props.mode==='light'?'white':'black',color:props.mode==='light'?'black':'white', border:props.mode==='dark'?'1px solid white':''}}>
-                <div className="card-body text-center">
-                  <h5 className="card-title">Deepak Uraon</h5>
-                  <p className="card-text">UI/UX Designer - Expert in UI/UX Design</p>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-4 mb-4">
-              <div className="card shadow-sm" style={{backgroundColor:props.mode==='light'?'white':'black',color:props.mode==='light'?'black':'white', border:props.mode==='dark'?'1px solid white':''}}>
-                <div className="card-body text-center">
-                  <h5 className="card-title">Siddharth Kumar</h5>
-                  <p className="card-text">Backend Developer - Specialised in Python, Django</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="about-section mb-5">
-          <h3>Contact Us</h3>
-          <p>If you have any questions or feedback, feel free to reach out!</p>
-          <p>
-            <FaEnvelope /> <a href="mailto:tech.hub@microsoft.com">tech.hub@microsoft.com</a>
-          </p>
-          <p>
-            <FaTwitter /> <a href="https://twitter.com/tech-hub" target="_blank" rel="noopener noreferrer">@TechHub</a>
-          </p>
-          <p>
-            <FaLinkedin /> <a href="https://linkedin.com/in/yadav-raj10" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          </p>
-        </section>
+    <div className="about-container min-h-screen bg-gradient-to-br from-green-100 to-blue-300 dark:from-gray-900 dark:to-gray-800 text-gray-900 dark:text-white flex flex-col items-center justify-center p-6 mt-0"
+    style={{
+        backgroundImage:
+          props.mode === "light"
+            ? "linear-gradient(to bottom right, #d1fae5, #93c5fd)"
+            : "linear-gradient(to bottom right, #c9d9d1, #050d15)",
+        color: props.mode === "light" ? "black" : "white",
+        minHeight: "100vh",
+        width: "100%",
+      }}
+    >
+      <div className="about-content" style={{backgroundColor:props.mode==='light'?'#90d9c5':'#30282882',color:props.mode==='light'?'black':'white'}}>
+        <h1 className="about-title" style={{backgroundColor:props.mode==='light'?'#90d9c5':'rgb(48 40 40 / 0%)',color:props.mode==='light'?'#6b46c1':'white'}}>About Text Manipulator</h1>
+        <p className="about-description">
+          Welcome to Text Manipulator, your go-to tool for text processing and
+          manipulation! Whether you're a developer, writer, student, or just
+          someone who works with text frequently, TextUtils is designed to make
+          your life easier.
+        </p>
+        <div className="features-box" style={{backgroundColor:props.mode==='light'?'#f3e8ff':'rgb(55 48 61)',color:props.mode==='light'?'black':'#b61fd6h'}}>
+          <h3 className="features-title" style={{color:props.mode==='light'?'#6b46c1':'white'}}>Key Features</h3>
+          <ul>
+            <li className="feature-item" style={{color:props.mode==='light'?'#6b46c1':'white'}}>Convert to Upper/Lower Case</li>
+            <li className="feature-item" style={{color:props.mode==='light'?'#6b46c1':'white'}}>Remove Extra Spaces</li>
+            <li className="feature-item" style={{color:props.mode==='light'?'#6b46c1':'white'}}>Character & Word Count</li>
+            <li className="feature-item" style={{color:props.mode==='light'?'#6b46c1':'white'}}>Copy to Clipboard</li>
+            <li className="feature-item" style={{color:props.mode==='light'?'#6b46c1':'white'}}>Dark Mode</li>
+          </ul>
+        </div>
+        <p className="about-get-started">
+          Try it now and enhance your text processing!
+        </p>
+        <Link to="/textform" className="about-button">
+          Get Started
+        </Link>
       </div>
     </div>
-  )
-}
+  );
+};
+
+export default About;
